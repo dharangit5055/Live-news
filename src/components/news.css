@@ -1,0 +1,122 @@
+.news{
+    width: 22%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    border-radius: 5px;
+}
+
+.news-articles{
+    width: 100%;
+    padding: 30px  5%;
+    background-color: lightgray ;
+    display: flex;
+    column-gap: 4%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.header{
+    width: 100%;
+    padding: 20px 5%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.news-img{
+    width: 100%;
+    height: 200px;
+    /* background-color: blue; */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.news-img img{
+    width: 100%;
+}
+
+.source{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+@media(max-width:800px){
+    input{
+        width: 150px;
+    }
+    .news{
+        width: 48%;
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        border-radius: 5px;
+    }
+    
+}
+/* App.css */
+
+/* Style for search button */
+.search-button {
+    margin-left: 10px; /* Add margin to separate from input */
+    padding: 8px 16px; /* Add padding for better appearance */
+    background-color: #007bff; /* Blue color for button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover style for search button */
+  .search-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+  
+  /* Media queries for tablets */
+
+@media only screen and (max-width: 1024px) {
+    .news {
+      width: 48%;
+    }
+    
+    .header input {
+      width: 150px;
+    }
+  }
+  
+  /* Media queries for mobile devices */
+  
+  @media only screen and (max-width: 600px) {
+    .news {
+      width: 100%;
+    }
+    
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header input {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  }
